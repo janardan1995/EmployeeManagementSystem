@@ -1,0 +1,15 @@
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\Manager.deps.json
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\Manager.runtimeconfig.json
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\Manager.runtimeconfig.dev.json
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\Manager.dll
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\Manager.pdb
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\EmployeeModel.dll
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\EmployeeModel.pdb
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\obj\Debug\netcoreapp2.1\Manager.csprojAssemblyReference.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\obj\Debug\netcoreapp2.1\Manager.AssemblyInfoInputs.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\obj\Debug\netcoreapp2.1\Manager.AssemblyInfo.cs
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\obj\Debug\netcoreapp2.1\Manager.csproj.CopyComplete
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\obj\Debug\netcoreapp2.1\Manager.dll
+C:\Users\Neelabh\source\repos\EmployeeApi\Manager\obj\Debug\netcoreapp2.1\Manager.pdb
