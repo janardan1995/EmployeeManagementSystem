@@ -25,7 +25,12 @@ namespace Manager
         /// <returns></returns>
         Task<int> AddEmployee(Employee employee);
 
-        //Employee GetEmployee(int id);
+        /// <summary>
+        /// Gets the employee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>object</returns>
+        Employee GetEmployee(int id);
 
         /// <summary>
         /// Gets all employee.

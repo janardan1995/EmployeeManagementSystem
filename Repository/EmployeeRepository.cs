@@ -77,10 +77,10 @@ namespace Repository
             return userDBContext.employees;
         }
 
-        //public Employee GetEmployee(int id)
-        //{
-        //    return userDBContext.employees.Find(id);
-        //}
+        public Employee GetEmployee(int id)
+        {
+            return userDBContext.employees.Find(id);
+        }
 
         //public Employee UpdateEmployee(Employee employeeChanges)
         //{

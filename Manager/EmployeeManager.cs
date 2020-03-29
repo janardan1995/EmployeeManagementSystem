@@ -68,9 +68,16 @@ namespace Manager
             return this.repo.GetALLEmployee();
         }
 
-        //public Employee GetEmployee(int id)
-        //{
-        //    return this.repo.GetEmployee(id);
-        //}
+        /// <summary>
+        /// Gets the employee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>
+        /// object
+        /// </returns>
+        public Employee GetEmployee(int id)
+        {
+            return this.repo.GetEmployee(id);
+        }
     }
 }

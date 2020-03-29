@@ -25,7 +25,12 @@ namespace Repository
         /// <returns>int</returns>
         Task<int> AddEmployee(Employee employee);
 
-        //Employee GetEmployee(int id);
+        /// <summary>
+        /// Gets the employee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        Employee GetEmployee(int id);
 
         /// <summary>
         /// Gets all employee.

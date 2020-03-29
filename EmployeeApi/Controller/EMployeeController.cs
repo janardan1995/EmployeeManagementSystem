@@ -82,5 +82,19 @@ namespace EmployeeApi.Controllers
         {
             return this.manager.DeleteEmployee(id);
         }
+
+        /// <summary>
+        /// Gets the employee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        [Route("GetEmployee")]
+        [HttpGet]
+        public Employee GetEmployee(int id)
+        {
+            return this.manager.GetEmployee(id);
+        }
+
+
     }
 }
