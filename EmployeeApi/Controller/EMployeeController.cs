@@ -34,5 +34,12 @@ namespace EmployeeApi.Controllers
             }
 
         }
+
+        [Route("GetALLEmployee")]
+        [HttpGet]
+        public IEnumerable<Employee> GetALLEmployee()
+        {
+            return this.manager.GetALLEmployee();
+        }
     }
 }

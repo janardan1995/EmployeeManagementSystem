@@ -20,5 +20,6 @@ namespace Repository.Context
         //{
         //    optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True");
         //}
+        //Data Source = (localdb)\MSSQLLocalDB;Integrated Security = True
     }
 }

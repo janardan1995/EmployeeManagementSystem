@@ -33,10 +33,10 @@ namespace Repository
         //    return employee;
         //}
 
-        //public IEnumerable<Employee> GetALLEmployee()
-        //{
-        //    return userDBContext.employees;
-        //}
+        public IEnumerable<Employee> GetALLEmployee()
+        {
+            return userDBContext.employees;
+        }
 
         //public Employee GetEmployee(int id)
         //{

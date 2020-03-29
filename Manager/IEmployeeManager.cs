@@ -10,7 +10,7 @@ namespace Manager
     {
         Task<int> AddEmployee(Employee employee);
         //Employee GetEmployee(int id);
-        //IEnumerable<Employee> GetALLEmployee();
+        IEnumerable<Employee> GetALLEmployee();
 
         //Employee UpdateEmployee(Employee employeeChanges);
         //Employee DeleteEmployee(int id);

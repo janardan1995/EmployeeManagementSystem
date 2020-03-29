@@ -31,10 +31,10 @@ namespace Manager
         //    return this.repo.UpdateEmployee(employeeChanges);
         //}
 
-        //public IEnumerable<Employee> GetALLEmployee()
-        //{
-        //    return this.repo.GetALLEmployee();
-        //}
+        public IEnumerable<Employee> GetALLEmployee()
+        {
+            return this.repo.GetALLEmployee();
+        }
 
         //public Employee GetEmployee(int id)
         //{
