@@ -1,36 +1,68 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeModel;
-using Repository;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="EmployeeManager.cs" company="Bridgelabz">
+//   Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Janardan Das"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Manager
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using System.Threading.Tasks;
+    using EmployeeModel;
+    using Repository;
+
+    /// <summary>
+    /// The Implementation of the InterfaceManager is done in this class
+    /// </summary>
+    /// <seealso cref="Manager.IEmployeeManager" />
     public class EmployeeManager:IEmployeeManager
     {
+        /// <summary>
+        /// The repo
+        /// </summary>
         private readonly IEmployeeRepository repo;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EmployeeManager"/> class.
+        /// </summary>
+        /// <param name="repo">The repo.</param>
         public EmployeeManager(IEmployeeRepository repo)
         {
             this.repo = repo;
         }
 
+        /// <summary>
+        /// Adds the employee.
+        /// </summary>
+        /// <param name="employee">The employee.</param>
+        /// <returns>intezer</returns>
         public Task<int> AddEmployee(Employee employee)
         {
             return this.repo.AddEmployee(employee);
         }
 
-        // public Employee DeleteEmployee(int id)
-        //{
-        //    return this.repo.DeleteEmployee(id);
-        //}
+        /// <summary>
+        /// Deletes the employee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>Employee Object</returns>
+        public Employee DeleteEmployee(int id)
+        {
+            return this.repo.DeleteEmployee(id);
+        }
 
         //public Employee UpdateEmployee(Employee employeeChanges)
         //{
         //    return this.repo.UpdateEmployee(employeeChanges);
         //}
 
+        /// <summary>
+        /// Gets all employee.
+        /// </summary>
+        /// <returns>IENUMERABLE</returns>
         public IEnumerable<Employee> GetALLEmployee()
         {
             return this.repo.GetALLEmployee();
