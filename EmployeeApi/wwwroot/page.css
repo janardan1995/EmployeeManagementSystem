@@ -1,0 +1,29 @@
+.component{
+	        display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+#form{
+	color:red;
+	background color: green;
+	
+	
+}
+
+ .register {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 20px;
+
+        }
+
+.button{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:blue;
+}

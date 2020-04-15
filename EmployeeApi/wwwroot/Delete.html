@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Delete</title>
+</head>
+<body>
+    <div>
+        <div class="emp">Delete Employee</div>
+        <div class="alignment">
+            <div class="user">User ID</div>
+            <input type="text" id="userId" name="userId" />
+        </div>
+        <div class="buttons">
+            <div class="btn">
+                <input type="button" id="btn" onclick="btn" value="Delete" class="delete" />
+            </div>
+            <div class="btn">
+                <input type="button" id="btn" onclick="window.location.href='https://localhost:44345/List.html'" value="Cancel" class="delete" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn").click(function () {
+                var formData = new FormData;
+                formData.append("userId", $("#userId").val());
+
+                $.ajax({
+                    url: "api/delete",
+                    type: 'DELETE',
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+
+                    success: function (Response) {
+                        window.location.href = 'https://localhost:44345/List.html'
+                        alert("Deleted");
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .emp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 20px;
+        }
+
+        .alignment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .user {
+            width: 80px;
+        }
+
+        .buttons {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 10px;
+        }
+
+        .delete {
+            background-color: #36718c;
+            color: white;
+            width: 75px;
+            height: 30px;
+            border-radius: 12px;
+        }
+
+        .btn {
+            width: 90px;           
+        }
+    </style>
+</body>
+</html>

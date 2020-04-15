@@ -31,7 +31,7 @@ namespace Repository.Context
 
         /// <summary>
         /// Gets or sets the employees.
-        /// This property is ised to query and save instance of the Employee class
+        /// This property is used to query and save instance of the Employee class
         /// </summary>
         /// <value>
         /// The employees.

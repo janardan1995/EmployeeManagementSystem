@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <div class="login">Login</div>
+        <div class="alignment">
+            <div class="email">Email Id</div>
+            <input type="text" name="email" id="email">
+        </div>
+        <br />
+        <div class="alignment">
+            <div class="email">Password</div>
+            <input type="text" name="password" id="password">
+        </div>
+        <br />
+        <div class="buttons">
+            <div class="btn">
+                <input type="button" id="btn" onclick="btn" value="Login" class="register" />
+            </div>
+            <div class="btn">
+                <input type="button" onclick="window.location.href='https://localhost:44372/Register.html'" value="Register" class="register" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#btn").attr('disabled', true);
+            function validateNext() {
+                var buttonNext = $("#email").val().trim() === '' || $("#password").val().trim() === '';
+                $("#btn").attr('disabled', buttonNext);
+            }
+            $('#email').on('keyup', validateNext);
+            $('#password').on('keyup', validateNext);
+            
+
+            $("#btn").click(function () {               
+                var formData = new FormData;
+                formData.append("email", $("#email").val());
+                formData.append("password", $("#password").val());
+
+                $.ajax({
+                    url: "api/login",
+                    type: 'POST',
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+
+                    success: function (Response) {
+                        window.location.href = 'https://localhost:44372/List.html'
+                        alert("Logged In!!");
+                    },
+                    error: function () {
+                        alert("incorrect");
+                    }                   
+                });
+            });
+        });
+
+    </script>
+    <style>
+        .login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 20px;
+        }
+
+        .alignment {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .email {
+            width: 100px;
+        }
+
+        .register {
+            background: #36718c;
+            color: white;
+            outline: none;
+            width: 72px;
+            height: 28px;
+            border-radius: 9px;
+            border: 1px solid #aaa;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            width: 120px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</body>
+</html>

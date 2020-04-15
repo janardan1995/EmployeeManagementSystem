@@ -95,6 +95,52 @@ namespace EmployeeApi.Controllers
             return this.manager.GetEmployee(id);
         }
 
+        /// <summary>
+        /// Gets the employee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        [Route("UpdateEmployee")]
+        [HttpPost]
+        public Employee UpdateEmployee(Employee employeeChanges)
+        {
+            return this.manager.UpdateEmployee(employeeChanges);
+        }
 
+        //public ViewResult Details()
+        //{
+        //   Employee model = this.manager.GetEmployee(id);
+        //    return View();
+        //}
+
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
+
+        //public IActionResult About()
+        //{
+        //    ViewData["Message"] = "Your application description page.";
+
+        //    return View();
+        //}
+
+        //public IActionResult Contact()
+        //{
+        //    ViewData["Message"] = "Your contact page.";
+
+        //    return View();
+        //}
+
+        //public IActionResult Privacy()
+        //{
+        //    return View();
+        //}
+
+        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //public IActionResult Error()
+        //{
+        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        //}
     }
 }

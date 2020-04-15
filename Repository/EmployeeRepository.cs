@@ -17,7 +17,7 @@ namespace Repository
     /// <summary>
     /// This is Repository class where InterfaceRepository parts are implemented.
     /// </summary>
-    /// <seealso cref="Repository.IEmployeeRepository" />
+    /// <seealso cref="Repository.EmployeeRepository" />
     public class ImpRepo : IEmployeeRepository
     {
         /// <summary>
@@ -77,17 +77,25 @@ namespace Repository
             return userDBContext.employees;
         }
 
+        /// <summary>
+        /// Gets the employee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         public Employee GetEmployee(int id)
         {
             return userDBContext.employees.Find(id);
         }
 
-        //public Employee UpdateEmployee(Employee employeeChanges)
-        //{
-        //    var employee = userDBContext.employees.Attach(employeeChanges);
-        //    employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-        //    userDBContext.SaveChanges();
-        //    return employeeChanges;
-        //}
+      
+        public Employee UpdateEmployee(Employee employeeChanges)
+        {
+            //Employee employee = userDBContext.employees.Find(id);
+
+            var employee = userDBContext.employees.Attach(employeeChanges);
+            employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            userDBContext.SaveChanges();
+            return employeeChanges;
+        }
     }
 }

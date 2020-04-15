@@ -38,7 +38,12 @@ namespace Repository
         /// <returns>IEnuberable</returns>
         IEnumerable<Employee> GetALLEmployee();
 
-        //Employee UpdateEmployee(Employee employeeChanges);
+        /// <summary>
+        /// Updates the employee.
+        /// </summary>
+        /// <param name="employeeChanges">The employee changes.</param>
+        /// <returns></returns>
+        Employee UpdateEmployee(Employee employeeChanges);
 
         /// <summary>
         /// Deletes the employee.

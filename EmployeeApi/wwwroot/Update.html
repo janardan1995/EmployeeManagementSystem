@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Update</title>
+</head>
+<body>
+
+    <div>
+        <div class="update">Update Employee</div>
+        <div class="alignment">
+            <div class="id">User Id</div>
+            <input type="text" id="userId" name="userId" />
+        </div>
+        <br />
+        <div class="alignment">
+            <div class="id">Name</div>
+            <input type="text" id="name" name="name" />
+        </div>
+        <br />
+        <div class="alignment">
+            <div class="id">Email ID</div>
+            <input type="text" id="email" name="email" />
+        </div>
+        <br />
+        <div class="alignment">
+            <div class="id">Password</div>
+            <input type="text" id="password" name="password" />
+        </div>
+        <br />
+        <div class="alignment">
+            <div class="id">Address</div>
+            <input type="text" id="address" name="address" />
+        </div>
+        <br />
+        <div class="buttons">
+            <div class="btn">
+                <input type="button" id="btn" onclick="btn" value="Update" class="up" />
+            </div>
+            <div class="btn">
+                <input type="button" id="btn" onclick="window.location.href='https://localhost:44345/List.html'" value="Cancel" class="up" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btn").click(function () {
+                var formData = new FormData;
+                formData.append("userId", $("#userId").val());
+                formData.append("name", $("#name").val());
+                formData.append("email", $("#email").val());
+                formData.append("password", $("#password").val());
+                formData.append("address", $("#address").val());
+
+                $.ajax({
+                    url: "api/update",
+                    type: 'PUT',
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+
+                    success: function (response) {
+                        window.location.href = 'https://localhost:44345/List.html'
+                        alert("Updated!!")
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <style>
+        .update {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 20px;
+        }
+
+        .alignment {
+            align-items: center;
+            display: flex;
+            justify-content: center
+        }
+
+        .id {
+            width: 100px;
+        }
+
+        .buttons {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .up {
+            border-radius: 10px;
+            background-color: #36718c;
+            width: 80px;
+            height: 30px;
+            color: white
+        }
+
+        .btn {
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>

@@ -11,3 +11,5 @@ C:\Users\Neelabh\source\repos\EmployeeApi\Repository\obj\Debug\netcoreapp2.1\Rep
 C:\Users\Neelabh\source\repos\EmployeeApi\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\Users\Neelabh\source\repos\EmployeeApi\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\Neelabh\source\repos\EmployeeApi\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\Neelabh\source\repos\EmployeeApi\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\Repository\obj\Debug\netcoreapp2.1\Repository.genruntimeconfig.cache

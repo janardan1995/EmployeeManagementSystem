@@ -54,10 +54,15 @@ namespace Manager
             return this.repo.DeleteEmployee(id);
         }
 
-        //public Employee UpdateEmployee(Employee employeeChanges)
-        //{
-        //    return this.repo.UpdateEmployee(employeeChanges);
-        //}
+        /// <summary>
+        /// Updates the employee.
+        /// </summary>
+        /// <param name="employeeChanges">The employee changes.</param>
+        /// <returns></returns>
+        public Employee UpdateEmployee(Employee employeeChanges)
+        {
+            return this.repo.UpdateEmployee(employeeChanges);
+        }
 
         /// <summary>
         /// Gets all employee.
