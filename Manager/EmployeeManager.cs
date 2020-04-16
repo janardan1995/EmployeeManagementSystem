@@ -58,8 +58,8 @@ namespace Manager
         /// Updates the employee.
         /// </summary>
         /// <param name="employeeChanges">The employee changes.</param>
-        /// <returns></returns>
-        public Employee UpdateEmployee(Employee employeeChanges)
+        /// <returns></returns>        
+        public Task<int> UpdateEmployee(Employee employeeChanges)
         {
             return this.repo.UpdateEmployee(employeeChanges);
         }

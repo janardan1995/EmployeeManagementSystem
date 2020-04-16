@@ -1,3 +1,9 @@
+C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.csprojAssemblyReference.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.csproj.CoreCompileInputs.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.RazorAssemblyInfo.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.RazorAssemblyInfo.cs
+C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.AssemblyInfoInputs.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.AssemblyInfo.cs
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\bin\Debug\netcoreapp2.1\EmployeeApi.deps.json
@@ -11,14 +17,8 @@ C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\bin\Debug\netcoreapp2.1\Re
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\bin\Debug\netcoreapp2.1\EmployeeModel.pdb
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\bin\Debug\netcoreapp2.1\Manager.pdb
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\bin\Debug\netcoreapp2.1\Repository.pdb
-C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.csprojAssemblyReference.cache
-C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.RazorAssemblyInfo.cache
-C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.RazorAssemblyInfo.cs
-C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.AssemblyInfoInputs.cache
-C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.AssemblyInfo.cs
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.RazorTargetAssemblyInfo.cache
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.csproj.CopyComplete
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.dll
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.pdb
-C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.csproj.CoreCompileInputs.cache
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeApi\obj\Debug\netcoreapp2.1\EmployeeApi.genruntimeconfig.cache

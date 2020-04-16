@@ -4,9 +4,9 @@ C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\bin\Debug\netcoreapp2.1\
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\bin\Debug\netcoreapp2.1\EmployeeModel.dll
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\bin\Debug\netcoreapp2.1\EmployeeModel.pdb
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.csprojAssemblyReference.cache
+C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.csproj.CoreCompileInputs.cache
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.AssemblyInfoInputs.cache
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.AssemblyInfo.cs
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.dll
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.pdb
-C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.csproj.CoreCompileInputs.cache
 C:\Users\Neelabh\source\repos\EmployeeApi\EmployeeModel\obj\Debug\netcoreapp2.1\EmployeeModel.genruntimeconfig.cache

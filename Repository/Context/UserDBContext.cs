@@ -36,10 +36,9 @@ namespace Repository.Context
         /// <value>
         /// The employees.
         /// </value>
-        public DbSet<Employee> employees
+        public DbSet<Employee> Employees
         {
             get; set;
-        }
-       
+        }        
     }
 }

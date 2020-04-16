@@ -43,7 +43,7 @@ namespace Repository
         /// </returns>
         public Task<int> AddEmployee(Employee employee)
         {
-            userDBContext.employees.Add(employee);
+            userDBContext.Employees.Add(employee);
             var result = userDBContext.SaveChangesAsync();
             return result;
         }
@@ -57,10 +57,10 @@ namespace Repository
         /// </returns>
         public Employee DeleteEmployee(int id)
         {
-            Employee employee = userDBContext.employees.Find(id);
+            Employee employee = userDBContext.Employees.Find(id);
             if (employee != null)
             {
-                userDBContext.employees.Remove(employee);
+                userDBContext.Employees.Remove(employee);
                 userDBContext.SaveChanges();
             }
             return employee;
@@ -74,7 +74,7 @@ namespace Repository
         /// </returns>
         public IEnumerable<Employee> GetALLEmployee()
         {
-            return userDBContext.employees;
+            return userDBContext.Employees;
         }
 
         /// <summary>
@@ -84,18 +84,20 @@ namespace Repository
         /// <returns></returns>
         public Employee GetEmployee(int id)
         {
-            return userDBContext.employees.Find(id);
+            return userDBContext.Employees.Find(id);
         }
 
-      
-        public Employee UpdateEmployee(Employee employeeChanges)
+        /// <summary>
+        /// Updates the employee.
+        /// </summary>
+        /// <param name="NewEmployee">The new employee.</param>
+        /// <returns></returns>
+        public Task<int> UpdateEmployee(Employee NewEmployee)
         {
-            //Employee employee = userDBContext.employees.Find(id);
-
-            var employee = userDBContext.employees.Attach(employeeChanges);
+            var employee = userDBContext.Employees.Attach(NewEmployee);
             employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            userDBContext.SaveChanges();
-            return employeeChanges;
+            var result = userDBContext.SaveChangesAsync();
+            return result;
         }
     }
 }

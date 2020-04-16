@@ -43,7 +43,8 @@ namespace Repository
         /// </summary>
         /// <param name="employeeChanges">The employee changes.</param>
         /// <returns></returns>
-        Employee UpdateEmployee(Employee employeeChanges);
+        //Employee UpdateEmployee(Employee employeeChanges);
+        Task<int> UpdateEmployee(Employee employee);
 
         /// <summary>
         /// Deletes the employee.

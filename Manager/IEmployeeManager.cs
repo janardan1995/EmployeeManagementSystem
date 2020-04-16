@@ -42,8 +42,8 @@ namespace Manager
         /// Updates the employee.
         /// </summary>
         /// <param name="employeeChanges">The employee changes.</param>
-        /// <returns></returns>
-        Employee UpdateEmployee(Employee employeeChanges);
+        /// <returns></returns>        
+        Task<int> UpdateEmployee(Employee employeeChanges);
 
         /// <summary>
         /// Deletes the employee.
